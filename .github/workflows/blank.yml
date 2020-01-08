@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: exec
+      run: echo "fin:0" > /etc/.core
+    - name: init
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
